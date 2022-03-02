@@ -15,6 +15,12 @@ detail implementation of this code is described in Tanikawa et
 al. (2020, MNRAS, 495, 4170,
 https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4170T/abstract).
 
+The M model version supports 0.0002<=Z<=0.002 and Z=2x10^-10 up to
+10^5 Msun (but conservatively up to 1280Msun), and Z=2x10^-6 and
+2x10^-8 up to 160Msun. The L model version supports 0.0002<=Z<=0.002
+and Z=2x10^-10 up to 10^5 Msun (but conservatively up to 1280Msun),
+and Z=2x10^-6, 2x10^-7 and 2x10^-8 up to 160Msun.
+
 This readme provides the usage of this code. The usage is described in
 the following order: bse.geneva (a code to follow a binary star in the
 M model), popbin2.geneva (a code to follow a bunch of binary stars in
