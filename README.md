@@ -24,14 +24,16 @@ You can compile "bse.geneva", and use it as follows.
 
 1. Move to the "src" directory.
 
-2. Compile "bse.geneva" by executing the command "make". Note that
+2. Excute the command "make clean" if you already compile bse.bonn or popbin2.bonn.
+
+3. Compile "bse.geneva" by executing the command "make bse". Note that
 gfortran and g++ compilers are required.
 
-3. Move to the "example/bse.geneva" directory.
+4. Move to the "example/bse.geneva" directory.
 
-4. Execute the command "./bse.geneva".
+5. Execute the command "./bse.geneva".
 
-5. You can get the following output:
+6. You can get the following output:
 
       TIME      M1       M2   K1 K2        SEP    ECC  R1/ROL1 R2/ROL2  TYPE  
      0.0000   143.924   134.604  1  1   0.1188E+04     0.189024   0.012   0.012  INITIAL   0.6093E+00  0.6523E+00    1.000    1.000 NOSN NOSN     0.000     0.000  
@@ -61,7 +63,7 @@ star 2's supernova type
 star 1's effective temparature  
 star 2's effective temparature  
 
-6. You can set the initial condition of a binary star, editting the
+7. You can set the initial condition of a binary star, editting the
 file "binary.in". Its format is as follows.
 
 mass0(1),mass0(2),tphysf,tb,kstar(1),kstar(2),z,ecc  
@@ -99,6 +101,96 @@ acc2:
 epsnov:  
 eddfac: Eddington factor  
 gamma:  
+
+-- popbin2.geneva
+
+You can compile "popbin2.geneva", and use it as follows.
+
+1. Move to the "src" directory.
+
+2. Excute the command "make clean" if you already compile bse.bonn or popbin2.bonn.
+
+3. Compile "popbin2.geneva" by executing the command "make
+popbin2". Note that gfortran and g++ compilers are required.
+
+4. Move to the "example/popbin2.geneva" directory.
+
+5. Execute the command "./popbin2.geneva".
+
+6. You can get two files "binary0000001.txt" and "binary0000002.txt"
+in the directory "output". The file "binary0000001.txt" includes 10000
+binary star's evolution. The file format is the same as the file
+format of "bse.geneva", except that "### 1" indicates binary ID (here,
+binary 1).
+
+7. You can set parameter sets and initial conditions of binary stars,
+editting the files "header.in" and binaries.in", respectively.
+
+The format of "header.in" is the same as "binary.in" except for the
+first line.
+
+z  
+neta,bwind,hewind,alpha1,lambda,betaacc  
+ceflag,tflag,ifflag,wdflag,bhflag,nsflag,psflag,mxns,idum  
+NewStarModel,WindEnhanced,RadiusShrinkage,NewDynTide,NewMassTransfer 
+pts1,pts2,pts3  
+sigma,beta,xi,acc2,epsnov,eddfac,gamma  
+
+The format of "binaries.in" is as follows.
+
+nbinary  
+mass0(1) mass0(2) tb ecc tphysf tphys  
+mass0(1) mass0(2) tb ecc tphysf tphys  
+mass0(1) mass0(2) tb ecc tphysf tphys  
+...  
+
+nbinary: the number of binary stars
+mass0(1): star 1's mass [Msun]  
+mass0(2): star 2's mass [Msun]  
+tb: binary period [day]  
+ecc: binary eccentricity  
+tphysf: ending time [Myr]  
+tphys: beginning time [Myr]  
+
+-- bse.bonn
+
+You can compile "bse.bonn", and use it as follows.
+
+1. Move to the "src" directory.
+
+2. Excute the command "make clean" if you already compile bse.geneva or popbin2.geneva.
+
+3. Edit the file "Makefile", changing "MODEL  = GENEVA" to "#MODEL  = GENEVA".
+
+4. Compile "bse.bonn" by executing the command "make bse". Note that
+gfortran and g++ compilers are required.
+
+5. Move to the "example/bse.bonn" directory.
+
+6. Execute the command "./bse.bonn".
+
+7. Analyze the output in a similar way to "bse.geneva"
+
+-- popbin2.bonn
+
+You can compile "popbin2.bonn", and use it as follows.
+
+1. Move to the "src" directory.
+
+2. Excute the command "make clean" if you already compile bse.bonn or popbin2.bonn.
+
+3. Edit the file "Makefile", changing "MODEL  = GENEVA" to "#MODEL  = GENEVA".
+
+4. Compile "popbin2.bonn" by executing the command "make
+popbin2". Note that gfortran and g++ compilers are required.
+
+5. Move to the "example/popbin2.bonn" directory.
+
+6. Execute the command "./popbin2.bonn".
+
+7. Analyze the output in a similar way to "popbin2.geneva"
+
+Appendix
 
 -- Star type
 
