@@ -6,10 +6,14 @@ Z=2x10^-10, and stellar mass up to 10^5Msun. There are two kinds of
 single star evolution models (the M and L models), whose detail
 modeling can be seen in Yoshida et al. (2019, ApJ, 881, 16), and whose
 features can be seen in Appendix of Tanikawa et al. (2022, ApJ, 926,
-83). The difference between the M and L models is more pronouced in
-more metal-poor stars (please see Tanikawa et al. 2021, MNRAS, 505,
-217). The detail implementation of this code is described in Tanikawa
-et al. (2020, MNRAS, 495, 4170).
+83,
+https://ui.adsabs.harvard.edu/abs/2022ApJ...926...83T/abstract). The
+difference between the M and L models is more pronouced in more
+metal-poor stars (please see Tanikawa et al. 2021, MNRAS, 505, 217,
+https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.2170T/abstract). The
+detail implementation of this code is described in Tanikawa et
+al. (2020, MNRAS, 495, 4170,
+https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4170T/abstract).
 
 This readme provides the usage of this code. The usage is described in
 the following order: bse.geneva (a code to follow a binary star in the
