@@ -34,8 +34,8 @@ gfortran and g++ compilers are required.
 5. You can get the following output:
 
       TIME      M1       M2   K1 K2        SEP    ECC  R1/ROL1 R2/ROL2  TYPE
-     0.0000   143.924   134.604  1  1   0.1188E+04     0.189024   0.012   0.012  INITIAL   0.6093E+00  0.6523E+00    1.000    1.000 NOSN NOSN     0.000     0.000
-     1.9122   143.852   134.539  4  1   0.1188E+04     0.189024   0.042   0.049  KW_CHNGE  0.6048E+00  0.6479E+00    1.000    1.000 NOSN NOSN     4.756     4.717
+     0.0000   143.924   134.604  1  1   0.1188E+04     0.189024   0.012   0.012  INITIAL   0.6093E+00  0.6523E+00    1.000    1.000 NOSN NOSN     0.000     0.000 
+     1.9122   143.852   134.539  4  1   0.1188E+04     0.189024   0.042   0.049  KW_CHNGE  0.6048E+00  0.6479E+00    1.000    1.000 NOSN NOSN     4.756     4.717 
      1.9581   143.848   134.534  4  4   0.1188E+04     0.189024   0.043   0.042  KW_CHNGE  0.6041E+00  0.6474E+00    1.000    1.000 NOSN NOSN     4.755     4.758
      2.1677   137.665   134.654  5  4   0.1212E+04     0.188824   0.228   0.095  KW_CHNGE  0.2782E-01  0.6531E+00    1.000    1.000 NOSN NOSN     4.394     4.577
      2.1748   143.852   134.695 15  4   0.0000E+00     0.000000   0.000  -1.000  NO_REMNT    Infinity  0.6528E+00    1.000    1.000 PISN NOSN     4.397     4.559
@@ -55,9 +55,9 @@ temparature, and star 2's effective temparature.
 6. You can set the initial condition of a binary star, editting the
 file "binary.in". Its format is as follows.
 
-mass0(1),mass0(2),tphysf,tb,kstar(1),kstar(2),z,ecc
-neta,bwind,hewind,alpha1,lambda,betaacc
-ceflag,tflag,ifflag,wdflag,bhflag,nsflag,psflag,mxns,idum
+mass0(1),mass0(2),tphysf,tb,kstar(1),kstar(2),z,ecc 
+neta,bwind,hewind,alpha1,lambda,betaacc 
+ceflag,tflag,ifflag,wdflag,bhflag,nsflag,psflag,mxns,idum 
 NewStarModel,WindEnhanced,RadiusShrinkage,NewDynTide,NewMassTransfer
 pts1,pts2,pts3
 sigma,beta,xi,acc2,epsnov,eddfac,gamma
