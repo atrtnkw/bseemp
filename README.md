@@ -31,15 +31,26 @@ gfortran and g++ compilers are required.
 
 4. Execute the command "./bse.geneva".
 
-5. You can get output. From left to right, the columns indicate time
-[Myr], star 1's mass [Msun], star 2's mass [Msun], star 1's type
-(described later), star 2's type, binary semi-major axis, binary
-eccentricity, star 1's radius scaled by its Roche-lobe radius, star
-2's radius scaled by its Roche-lobe radius, binary status (described
-later), star 1's dimensionless spin, star 2's dimensionless spin, star
-1's spin-orbit inclination, star 2's spin-orbit inclination, star 1's
-supernova type (discribed later), star 2's supernova type, star 1's
-effective temparature, and star 2's effective temparature.
+5. You can get the following output:
+
+      TIME      M1       M2   K1 K2        SEP    ECC  R1/ROL1 R2/ROL2  TYPE
+     0.0000   143.924   134.604  1  1   0.1188E+04     0.189024   0.012   0.012  INITIAL   0.6093E+00  0.6523E+00    1.000    1.000 NOSN NOSN     0.000     0.000
+     1.9122   143.852   134.539  4  1   0.1188E+04     0.189024   0.042   0.049  KW_CHNGE  0.6048E+00  0.6479E+00    1.000    1.000 NOSN NOSN     4.756     4.717
+     1.9581   143.848   134.534  4  4   0.1188E+04     0.189024   0.043   0.042  KW_CHNGE  0.6041E+00  0.6474E+00    1.000    1.000 NOSN NOSN     4.755     4.758
+     2.1677   137.665   134.654  5  4   0.1212E+04     0.188824   0.228   0.095  KW_CHNGE  0.2782E-01  0.6531E+00    1.000    1.000 NOSN NOSN     4.394     4.577
+     2.1748   143.852   134.695 15  4   0.0000E+00     0.000000   0.000  -1.000  NO_REMNT    Infinity  0.6528E+00    1.000    1.000 PISN NOSN     4.397     4.559
+     2.2177     0.000   129.815 15  5   0.0000E+00    -1.000000  -1.000   0.000  KW_CHNGE    Infinity  0.5020E-01    1.000    1.000 PISN NOSN     4.397     4.413
+     2.2250     0.000   134.534 15 15   0.0000E+00     0.000000   0.000  -2.000  NO_REMNT    Infinity    Infinity    1.000    1.000 PISN PISN     4.397     4.409
+
+From left to right, the columns indicate time [Myr], star 1's mass
+[Msun], star 2's mass [Msun], star 1's type (described later), star
+2's type, binary semi-major axis, binary eccentricity, star 1's radius
+scaled by its Roche-lobe radius, star 2's radius scaled by its
+Roche-lobe radius, binary status (described later), star 1's
+dimensionless spin, star 2's dimensionless spin, star 1's spin-orbit
+inclination, star 2's spin-orbit inclination, star 1's supernova type
+(discribed later), star 2's supernova type, star 1's effective
+temparature, and star 2's effective temparature.
 
 6. You can set the initial condition of a binary star, editting the
 file "binary.in". Its format is as follows.
