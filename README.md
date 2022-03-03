@@ -1,5 +1,10 @@
 BSEEMP is a binary population synthesis code to follow binary
-evolution. This code is based on the BSE code (Hurley et al. 2000;
+evolution. Please find the manual here:
+https://github.com/atrtnkw/bseemp/tree/main/doc/ms.pdf
+
+*** The following description will disappear soon. ***
+
+This code is based on the BSE code (Hurley et al. 2000;
 Hurley et al. 2002), and supports single star evolution in a wider
 parameter range than the original BSE: stellar metallicity down to
 Z=2x10^-10, and stellar mass up to 10^5Msun. There are two kinds of
