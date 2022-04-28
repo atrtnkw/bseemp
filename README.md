@@ -15,10 +15,10 @@ explation of the file "ibinary.dat". By default, the binary initial
 conditions include 10^6 binary stars with Z=2e-04. If you use them as
 initial conditions of popbin2.bonn/popbin2.geneva, you will calculate
 100Gyr evolution of the 10^6 binary stars. The binary initial
-conditions follow the Kroupa's IMF for the primary stellar masses, and
-Sana et al. (2012) binary models for the distributions of mass ratios,
-periods, and eccentricities. If you want to change the binary initial
-conditions, please edit the file "input.dat". You can change the
-number of binary stars, metallicities, IMFs, binary parameters, and so
-on. The detail explanation will be described in
+conditions follow the Kroupa (2001)'s IMF for the primary stellar
+masses, and Sana et al. (2012)'s binary models for the distributions
+of mass ratios, periods, and eccentricities. If you want to change the
+binary initial conditions, please edit the file "input.dat". You can
+change the number of binary stars, metallicities, IMFs, binary
+parameters, and so on. The detail explanation will be described in
 https://github.com/atrtnkw/bseemp/tree/main/doc/ms.pdf later.
