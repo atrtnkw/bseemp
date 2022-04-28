@@ -1,0 +1,15 @@
+1000000 2e-04 1e5
+2 0.08 0.5 150. 1.3 2.3
+2 0.08 0.5 150. 1.3 2.3
+0.5
+0.1 0.1
+0.15 5.5 0.55
+0.42
+
+nbin z tend
+TheNumberOfSimulatedMassPowerIndex, BoundaryMass, PowerIndex
+TheNumberOfIntrinsicMassPowerIndex, BoundaryMass, PowerIndex
+BinaryFraction
+MassRatioMinimum, MassRatioPowerIndex (Sana: 0.1 0.1)
+LogPeriodMinimum, LogPeriodMaximum, LogPeriodPowerIndex (Sana: 0.15 5.5 0.55)
+EccentricityPowerIndex (Sana: 0.42, Thermal: -1)
