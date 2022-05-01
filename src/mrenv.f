@@ -73,10 +73,13 @@
 !         x = ((lum-lbgb)/B)**2
 !         y = (F - 0.033d0*log10(lbgb))/k2bgb - 1.d0
 !         k2g = (F - 0.033d0*log10(lum) + 0.4d0*x)/(1.d0+y*(lbgb/lum)+x)
-         logmt = min(logmt,log10(maxmass))
+         logmt = min(log10(mt),log10(maxmass))
          mttmp = min(mt,maxmass)
          if(mt.gt.maxmass) then
             lumtmp  = lbgb
+            lbgbtmp = lbgb
+         else
+            lumtmp  = lum
             lbgbtmp = lbgb
          endif
          F = 0.208d0 + 0.125d0*logmt - 0.035d0*logmt**2
