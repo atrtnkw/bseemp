@@ -298,7 +298,7 @@ int main(int argc,
 							    RunParameter::Primary::MassRatioAlpha,
 							    RunParameter::Primary::SimulatedSecondaryMassMinimum);
     FILE * fp;
-    fp = fopen("ibinary.dat", "w");
+    fp = fopen("binaries.in", "w");
     fprintf(fp, "%d\n", nbin);
     for(int i = 0; i < nbin; i++) {
         double m1 = SimulatedMassFunction.getPrimaryMass();
@@ -363,7 +363,7 @@ int main(int argc,
 
     {
         using namespace RunParameter;
-        fp = fopen("ibinary.txt", "w");
+        fp = fopen("binaries.txt", "w");
 	SimulatedMassFunction.print(fp);
         fprintf(fp, "PericenterMinimum:    %e\n", PericenterMinimum);
 #ifdef PopIandII
